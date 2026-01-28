@@ -31,5 +31,21 @@ cdk deploy
 Bootstrap enviroment if deploy fail in first atempted.
 ```sh
 cdk bootstrap
-`````````
+```
 
+Install the dependency
+
+```sh
+npm i @types/aws-lambda
+```
+
+```sh
+npm i build
+```
+
+```sh
+cdk deploy --require-approval never
+```
+
+
+* `npm run build`   compile typescript to js
